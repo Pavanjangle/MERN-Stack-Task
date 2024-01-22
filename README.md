@@ -12,15 +12,16 @@ Code Quality: Emphasized clean and modular code practices, making the codebase e
 <br>
 # Kindly ensure the seamless execution of the project by installing the necessary packages using 'npm install' before running !!
 
-npm install react react-dom redux react-redux @reduxjs/toolkit axios express mongoose cors body-parser mongodb
+npm install react react-dom redux react-redux @reduxjs/toolkit axios express mongoose cors body-parser mongodb <br>
 npm install @mui/material @emotion/react @emotion/styled  # Or install Bootstrap for styling
  crate server.js
+ <br>
 // Import necessary modules
 Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/blog', { useNewUrlParser: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error(err));
-
+<br>
 // Define Mongoose schema for articles
 const articleSchema = new mongoose.Schema({
     title: String,
@@ -29,20 +30,20 @@ const articleSchema = new mongoose.Schema({
     createdAt: Date,
     updatedAt: Date
 });
-
+<br>
 // Create Mongoose model
 const Article = mongoose.model('Article', articleSchema);
-
+<br>
 // Create Express app
 const app = express();
-
+<br>
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
-
+<br>
 // API routes for CRUD operations
 // ...
-
+<br>
 // Start the server
 app.listen(3000, () => console.log('Server started on port 3000'));
 <br>
