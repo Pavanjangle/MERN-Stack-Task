@@ -1,4 +1,7 @@
 # BlogApp
+<br>
+<br>
+
 Overview
 This repository encapsulates my successful completion of the second technical round's MERN stack task. From MongoDB to Express.js, React.js, and Node.js, this project demonstrates my proficiency in building robust full-stack applications.
 <br>
@@ -10,8 +13,10 @@ Tech Stack Mastery: Leveraged MongoDB for the database, utilized Express.js for 
 Code Quality: Emphasized clean and modular code practices, making the codebase easy to understand, maintain, and scale.
 <br>
 <br>
-# Kindly ensure the seamless execution of the project by installing the necessary packages using 'npm install' before running !!
-
+# If any additional dependencies are required for running the project, kindly install them. I will provide you with <br>
+the necessary packages, and if you find any missing, please install them as needed for smooth execution.
+<br>
+<br>
 npm install react react-dom redux react-redux @reduxjs/toolkit axios express mongoose cors body-parser mongodb <br>
 npm install @mui/material @emotion/react @emotion/styled  # Or install Bootstrap for styling
  crate server.js
