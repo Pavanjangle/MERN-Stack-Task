@@ -16,11 +16,14 @@ npm install react react-dom redux react-redux @reduxjs/toolkit axios express mon
 npm install @mui/material @emotion/react @emotion/styled  # Or install Bootstrap for styling
  crate server.js
  <br>
+ <br>
+ <br>
 // Import necessary modules
 Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/blog', { useNewUrlParser: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error(err));
+<br>
 <br>
 // Define Mongoose schema for articles
 const articleSchema = new mongoose.Schema({
@@ -31,18 +34,23 @@ const articleSchema = new mongoose.Schema({
     updatedAt: Date
 });
 <br>
+<br>
 // Create Mongoose model
 const Article = mongoose.model('Article', articleSchema);
 <br>
+<br>
 // Create Express app
 const app = express();
+<br>
 <br>
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 <br>
+<br>
 // API routes for CRUD operations
 // ...
+<br>
 <br>
 // Start the server
 app.listen(3000, () => console.log('Server started on port 3000'));
